@@ -1,2 +1,2 @@
 # CallbakcAsynk
-Example of AsynkTask and CallBack
+Example to understand AsyncTask and CallBack
