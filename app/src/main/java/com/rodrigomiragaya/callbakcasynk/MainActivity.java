@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements GetRawData.OnDown
 
         //execute the GetRawData Async and pass the callback
         GetRawData getRawData = new GetRawData(this);
-        getRawData.execute("https://www.preciosclaros.gob.ar/#!/buscar-productos");
+        getRawData.execute("https://api.myjson.com/bins/r7jlj");
         Log.d(TAG, "onCreate: getRawData.execute");
 
     }
