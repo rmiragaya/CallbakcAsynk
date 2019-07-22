@@ -2,7 +2,6 @@ package com.rodrigomiragaya.callbakcasynk;
 
 import android.os.AsyncTask;
 import android.util.Log;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -39,9 +38,8 @@ public class GetRawData extends AsyncTask<String, Integer, String> {
         Log.d(TAG, "onPreExecute: call");
     }
 
-
     //metod to get all the info (html) from a website
-    //can use to get json if the web is json aprove
+    //can use to get json if the web is json approve
     @Override
     protected String doInBackground(String... strings) {
         Log.d(TAG, "doInBackground: call");
@@ -67,8 +65,7 @@ public class GetRawData extends AsyncTask<String, Integer, String> {
 
             reader = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 
-//            String line;
-//            while(null != (line = reader.readLine())) {
+
             for(String line = reader.readLine(); line != null; line = reader.readLine()) {
                 result.append(line).append("\n");
             }
@@ -103,7 +100,6 @@ public class GetRawData extends AsyncTask<String, Integer, String> {
     @Override
     protected void onProgressUpdate(Integer... values) {
         // to show the proggres of the task
-
         super.onProgressUpdate(values);
     }
 

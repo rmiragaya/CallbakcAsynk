@@ -37,5 +37,5 @@ public class MainActivity extends AppCompatActivity implements GetRawData.OnDown
         }
     }
 
-    
+
 }
